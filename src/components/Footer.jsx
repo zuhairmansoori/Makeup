@@ -63,7 +63,7 @@ function Footer() {
           123 Oxford Street, London, W1D 2HX, United Kingdom
         </address>
         <a href="tel:+44 7700 900123">+44 7700 900123</a>
-        <a href="mailto:hello@lumierebeautystudio.example">hello@lumierebeautystudio.example</a>
+        <a href="mailto:lumierebeautystudio@gmail.com">lumierebeautystudio@gmail.com</a>
       </div>
       <div className='bg-primary p-5 py-10 sm:w-150 lg:w-80  rounded-3xl flex flex-col ml-5  justify-center items-center gap-5 self-center '>
         <h2 className='text-xl sm:text-2xl lg:text-xl '>
