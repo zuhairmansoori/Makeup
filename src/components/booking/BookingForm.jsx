@@ -37,7 +37,7 @@ const {closeBooking} = useBooking()
   
   return (
     <>
-      <section className='h-screen flex justify-center items-center bg-black/20 fixed top-0 z-50 inset-0'>
+      <section className=' flex justify-center items-start sm:items-center bg-black/20 fixed top-0 z-50 inset-0 overflow-auto'>
         <div className='bg-muted w-full lg:max-w-2xl p-10 rounded-3xl flex flex-col justify-center  gap-5'>
           <div className='flex justify-between items-center'>
             <div>
