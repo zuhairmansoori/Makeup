@@ -113,7 +113,7 @@ function Testimonial() {
 ]
   return (
    <>
-   <section ref={ref} className="relative bg-[url('/reviewmobile.webp')]  lg:bg-[url('/reviewdesk.webp')] h-screen mt-15 bg-no-repeat bg-cover overflow-hidden px-10 pt-20">
+   <section id='reviews' ref={ref} className="relative bg-[url('/reviewmobile.webp')]  lg:bg-[url('/reviewdesk.webp')] h-screen mt-15 bg-no-repeat bg-cover overflow-hidden px-10 pt-20">
 
      <div className ='absolute top-25  sm:top-30 sm:left-[20%] lg:top-[40%] lg:left-10 flex flex-col justify-center items-center lg:justify-start'>
       <p className='text-[10px] sm"text-sm text-center inline bg-primary-foreground/10 p-3  py-1 rounded-2xl'>THE LUMIÈRE EXPERIENCE</p>

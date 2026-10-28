@@ -1,7 +1,9 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { Button } from './ui/button'
+import { useBooking } from './booking/BookingContext'
 
 function Footer() {
   const link = [
@@ -19,11 +21,11 @@ function Footer() {
         {name:"Editorial Makeup", href:'/editorial-makeup'},
          {name:"Makeup Lessons", href:'/makeup-lessons'}
  ]   
-
+ const {openBooking} = useBooking()
   return (
    <>
-   <footer className='bg-primary-foreground h-1/3 p-5 sm:p-10 lg:p-20'>
-   <div className='grid grid-cols-1 gap-5 lg:gap-0 sm:grid-cols-3 lg:grid-cols-4 justify-start items-start justify-items-start sm:justify-end lg:justify-center lg:items-center lg:justify-items-center'>
+   <footer id='contact' className='bg-primary-foreground h-1/3 p-5 sm:p-10 lg:p-20'>
+   <div className='grid grid-cols-1 gap-5 lg:gap-0 sm:grid-cols-2 lg:grid-cols-5 justify-start items-start justify-items-start sm:justify-end lg:justify-center lg:items-start lg:justify-items-center'>
           <div className='lg:w-100 flex flex-col justify-center items-start '>
         <Image
         alt='logo'
@@ -52,15 +54,26 @@ function Footer() {
            ))
         }
       </div>
-      <div className='bg-primary p-5 py-10 sm:w-150 lg:w-full rounded-3xl flex flex-col ml-10 justify-start items-center gap-5 self-end'>
-        <h2 className='text-xl sm:text-3xl lg:text-2xl '>
+       <div className='text-primary grid gap-3 '>
+        <h2  className='lg:text-2xl mb-5'>Visit Us</h2>
+        <address>
+          London, United Kingdom
+        </address>
+        <address>
+          123 Oxford Street, London, W1D 2HX, United Kingdom
+        </address>
+        <a href="tel:+44 7700 900123">+44 7700 900123</a>
+        <a href="mailto:hello@lumierebeautystudio.example">hello@lumierebeautystudio.example</a>
+      </div>
+      <div className='bg-primary p-5 py-10 sm:w-150 lg:w-80  rounded-3xl flex flex-col ml-5  justify-center items-center gap-5 self-center '>
+        <h2 className='text-xl sm:text-2xl lg:text-xl '>
             Your beauty, your moment.
         </h2>
-        <p className='text-xl sm:text-2xl lg:text-xl'>
+        <p className='text-xl  lg:text-sm'>
             Let&apos;s create a look you&apos;ll love.
         </p>
         <div className='text-center'>
-                    <Button className={'sm:text-xl sm:py-6 sm:px-4'} variant='secondary' >BOOK YOUR APPOINTMENT ↗</Button>
+                    <Button onClick={openBooking} className={'sm:text-xl py-5 px-6 lg:text-sm'} variant='secondary' >BOOK YOUR APPOINTMENT ↗</Button>
         </div>
   
       </div>

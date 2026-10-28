@@ -7,6 +7,7 @@ import About from './About'
 import State from '../State'
 import Testimonial from './Testimonial'
 import Faq from './Faq'
+import BookingForm from '../booking/BookingForm'
 
 
 function Grid() {
@@ -24,6 +25,7 @@ function Grid() {
           <State/>
           <Testimonial/>
           <Faq/>
+         
         </div>
         
 

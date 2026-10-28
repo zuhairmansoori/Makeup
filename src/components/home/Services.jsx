@@ -58,7 +58,7 @@ function Services() {
                                 className='rounded-2xl w-full h-full object-cover object-[70%] md:object-right'
                             />
                         </div>
-                        <div className='px-15 py-5'>
+                        <div id='bridal' className='px-15 py-5'>
                             <h2 className='text-4xl mb-5 animate-heading font-bold'>Bridal Makeup</h2>
                             <div className='flex flex-col animate-pera justify-center text-xl items-start gap-3'>
                                 <p>For the moments you&apos;ll remember forever.</p>
@@ -78,7 +78,7 @@ function Services() {
                                 className='w-full h-full object-cover object-top'
                             />
                         </div>
-                        <div className='w-full sm:w-1/2 lg:max-w-4xl sm:px-3 lg:px-20'>
+                        <div id='engagement' className='w-full sm:w-1/2 lg:max-w-4xl sm:px-3 lg:px-20'>
                             <p className='text-sm text-amber-800 p-5 pl-1'>02 — ENGAGEMENT</p>
                             <h2 className='text-4xl mb-5 animate-heading font-bold'>Engagement Makeup</h2>
                             <div className='flex flex-col animate-pera justify-center text-xl items-start gap-3'>
@@ -99,7 +99,7 @@ function Services() {
                                 className='w-full h-full object-cover object-top'
                             />
                         </div>
-                        <div className='w-full sm:w-1/2 lg:max-w-4xl lg:pr-30'>
+                        <div id='occasion' className='w-full sm:w-1/2 lg:max-w-4xl lg:pr-30'>
                             <p className='text-sm text-amber-800 p-5 pl-1'>03 — SPECIAL OCCASIONS</p>
                             <h2 className='text-4xl mb-5 animate-heading font-bold'>Occasion Makeup</h2>
                             <div className='flex flex-col animate-pera justify-center text-xl items-start gap-3'>
@@ -121,7 +121,7 @@ function Services() {
                                 className='w-full h-full object-cover object-top'
                             />
                         </div>
-                        <div className='w-full sm:w-1/2 max-w-4xl sm:px-3 lg:px-20'>
+                        <div id='editorial' className='w-full sm:w-1/2 max-w-4xl sm:px-3 lg:px-20'>
                             <p className='text-sm text-amber-800 p-5 pl-1'>04 — EDITORIAL & GLAM</p>
                             <h2 className='text-4xl animate-heading mb-5 font-bold'>Make a statement.</h2>
                             <div className='flex flex-col animate-pera justify-center text-xl items-start gap-3'>

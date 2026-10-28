@@ -55,7 +55,7 @@ function Gallery() {
   
   return (
     <>
-      <section ref={contain}>
+      <section id='portfolio' ref={contain}>
         <div className='text-center py-15'>
           <p className='text-sm card inline bg-primary-foreground/10 p-3  py-1 rounded-2xl'>The Artistry</p>
                     <h2 className='text-primary-foreground card  text-2xl sm:text-3xl mt-10 mb-3 lg:text-5xl'>Beauty, Through My Lens</h2>

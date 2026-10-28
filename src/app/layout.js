@@ -2,6 +2,7 @@ import { Geist, Geist_Mono ,Bodoni_Moda, DM_Sans,Cormorant_Garamond} from "next/
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import BookingProvider from "@/components/booking/BookingContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,13 +37,18 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} ${bodoniModa.variable} ${dmSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+           <BookingProvider>
         <header className=''>
           <Nav/>
           </header>  
           <main className='flex-1'>
-                {children}
+         
+               {children}
+         
+               
           </main>
         <Footer />
+           </BookingProvider>
         </body>
     </html>
   );
