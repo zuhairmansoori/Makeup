@@ -59,7 +59,7 @@ function About() {
           </div>
           <div className="w-full lg:w-1/2 pt-5">
             <p className='text-sm card inline bg-primary-foreground/10 p-3  py-1 rounded-2xl'>GET TO KNOW YOUR ARTIST</p>
-             <h2 className='text-4xl mb-5 mt-10 about-heading font-bold'>Meet <strong>Lumaira</strong></h2>
+             <h2 className='text-4xl mb-5 mt-10 about-heading font-bold'>Meet <strong>Lumiere</strong></h2>
              <p className='text-card-foreground about-pera text-xl '>For me, makeup is more than just a look — it&rsquo;s a way to celebrate your individuality. My approach is all about enhancing your natural features and creating a look that makes you feel confident, radiant and beautifully yourself.</p>
              <p className='text-card-foreground about-pera text-xl '>With a passion for beauty and an eye for detail, I believe every face tells a unique story. From soft, natural glam to timeless bridal elegance, my goal is to create looks that feel authentic to you and make every special moment unforgettable.</p>
                <p className='text-card-foreground about-pera text-xl '>I focus on understanding your personal style, choosing the right tones and perfecting every detail to bring your vision to life.</p>
