@@ -13,9 +13,9 @@ function Testimonial() {
         
     })
     gsap.to('.review-card',{
-      y:-2000,
+      y:-1200,
       opacity:1,
-      stagger:0.3,
+      stagger:0.2,
       ease:"none",
       scrollTrigger:{
         trigger:ref.current,
