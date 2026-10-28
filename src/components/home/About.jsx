@@ -46,7 +46,7 @@ function About() {
   },{scope:ref})
   return (
     <>
-    <section ref={ref} className='p-10 py-20   bg-muted '>
+    <section ref={ref} className='p-10 py-20 mb-15  bg-muted '>
         <div className='flex flex-col lg:flex-row  justify-start items-start gap-15'>
           <div className='overflow-hidden lg:w-1/2  rounded-3xl'>
             <Image

@@ -23,22 +23,22 @@ function Footer() {
   return (
    <>
    <footer className='bg-primary-foreground h-1/3 p-5 sm:p-10 lg:p-20'>
-   <div className='grid grid-cols-1 gap-5 lg:gap-0 sm:grid-cols-3 lg:grid-cols-4 justify-start items-start justify-items-start lg:justify-center lg:items-center lg:justify-items-center'>
+   <div className='grid grid-cols-1 gap-5 lg:gap-0 sm:grid-cols-3 lg:grid-cols-4 justify-start items-start justify-items-start sm:justify-end lg:justify-center lg:items-center lg:justify-items-center'>
           <div className='lg:w-100 flex flex-col justify-center items-start '>
         <Image
         alt='logo'
         src='/logoimg.webp'
         width={300}
         height={100}
-        className='w-20 sm:40 lg:w-100'
+        className='w-40 sm:40 lg:w-100'
         />
-        <p className='text-primary text-sm w-50 lg:w-full'>Enhancing your natural beauty with timeless artistry and a touch of elegance. From bridal glam to special occasions, every look is thoughtfully created to make you feel confident, radiant, and uniquely you.</p>
+        <p className='text-primary text-sm w-80 sm:w-full lg:w-full'>Enhancing your natural beauty with timeless artistry and a touch of elegance. From bridal glam to special occasions, every look is thoughtfully created to make you feel confident, radiant, and uniquely you.</p>
       </div>
       <div className='text-primary grid gap-3 ' >
         <h2 className='lg:text-2xl mb-5'>Links</h2>
        {
         link.map((lnk)=>(
-            <p className='text-sm md:text-xl hover:text-gray-400 duration-200' key={lnk.name}><Link  href={lnk.href} >{lnk.name}</Link></p>
+            <p className='text-sm lg:text-xl hover:text-gray-400 duration-200' key={lnk.name}><Link  href={lnk.href} >{lnk.name}</Link></p>
             
         ))
        }
@@ -47,12 +47,12 @@ function Footer() {
         <h2 className='lg:text-2xl mb-5'>Services</h2>
         {
            services.map((sv)=>(
-          <p className='text-sm md:text-xl hover:text-gray-400 duration-200' key={sv.name}> <Link  href={sv.href} >{sv.name}</Link></p>
+          <p className='text-sm lg:text-xl hover:text-gray-400 duration-200' key={sv.name}> <Link  href={sv.href} >{sv.name}</Link></p>
            
            ))
         }
       </div>
-      <div className='bg-primary p-5 py-10 sm:w-150 lg:w-full rounded-3xl flex flex-col justify-start items-center gap-5 self-end'>
+      <div className='bg-primary p-5 py-10 sm:w-150 lg:w-full rounded-3xl flex flex-col ml-10 justify-start items-center gap-5 self-end'>
         <h2 className='text-xl sm:text-3xl lg:text-2xl '>
             Your beauty, your moment.
         </h2>
@@ -65,11 +65,14 @@ function Footer() {
   
       </div>
    </div>
-   <div className='h-px bg-primary my-10'></div>
-   <div className='text-center text-primary'>
+  
+       <div className='h-px bg-primary my-10 '></div>
+   <div className='text-center text-primary '>
     <p>© 2026 Lumière Beauty Studio. All rights reserved.</p>
     <p className='text-gray-300'>Website crafted by <strong> ZamCrop</strong></p>
    </div>
+   
+  
     
    </footer>
    </>

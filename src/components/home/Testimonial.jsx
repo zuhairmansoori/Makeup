@@ -115,9 +115,9 @@ function Testimonial() {
    <>
    <section ref={ref} className="relative bg-[url('/reviewmobile.webp')]  lg:bg-[url('/reviewdesk.webp')] h-screen mt-15 bg-no-repeat bg-cover overflow-hidden px-10 pt-20">
 
-     <div className ='absolute top-5  sm:top-30 sm:left-[20%] lg:top-[40%] lg:left-10 flex flex-col justify-center items-center lg:justify-start'>
-      <p className='text-sm text-center inline bg-primary-foreground/10 p-3  py-1 rounded-2xl'>THE LUMIÈRE EXPERIENCE</p>
-      <h2 className='text-primary-foreground animate-heading text-2xl sm:text-3xl mt-10 mb-3 lg:text-5xl'>Beauty, in every detail.</h2>
+     <div className ='absolute top-25  sm:top-30 sm:left-[20%] lg:top-[40%] lg:left-10 flex flex-col justify-center items-center lg:justify-start'>
+      <p className='text-[10px] sm"text-sm text-center inline bg-primary-foreground/10 p-3  py-1 rounded-2xl'>THE LUMIÈRE EXPERIENCE</p>
+      <h2 className='text-primary-foreground animate-heading text-2xl sm:text-3xl mt-2 sm:mt-10 mb-3 lg:text-5xl'>Beauty, in every detail.</h2>
       <p className='text-card-foreground animate-pera text-sm sm:text-xl  md:text-2xl '>Personalised artistry. Timeless elegance. Your moment.</p>
      </div>
      <div className='relative h-full w-full flex flex-wrap  justify-around  items-center gap-30'>
