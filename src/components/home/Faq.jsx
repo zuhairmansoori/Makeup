@@ -60,7 +60,7 @@ function Faq() {
                         </h2>
 
                         <p className="mt-4 text-muted-foreground">
-                            Find answers to common questions about our travel services.
+                           Find answers to common questions about our makeup services, bridal packages and booking process.
                         </p>
                     </div>
                
