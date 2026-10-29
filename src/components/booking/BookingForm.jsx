@@ -37,16 +37,16 @@ const {closeBooking} = useBooking()
   
   return (
     <>
-      <section className=' flex justify-center items-start sm:items-center bg-black/20 fixed top-0 z-50 inset-0 overflow-auto'>
-        <div className='bg-muted w-full lg:max-w-2xl p-10 rounded-3xl flex flex-col justify-center  gap-5'>
+      <section className=' flex justify-center items-start sm:items-center bg-black/20 fixed top-0 z-50 inset-0 overflow-auto p-5 '>
+        <div className='relative bg-muted w-full lg:max-w-2xl p-10 rounded-3xl flex flex-col justify-center  gap-5'>
           <div className='flex justify-between items-center'>
             <div>
-                <p className='text-sm'>LUMIÈRE BEAUTY STUDIO</p>
-            <h2 className='text-2xl'>Let&apos;s create your look.</h2>
+                <p className='text-[10px] sm:text-sm'>LUMIÈRE BEAUTY STUDIO</p>
+            <h2 className='text-xl sm:text-2xl'>Let&apos;s create your look.</h2>
             <p>Tell us a little about your special occasion</p>
             </div>
-            <div onClick={closeBooking} className='bg-primary-foreground text-primary hover:bg-primary hover:text-primary-foreground duration-450 transition-all p-2 rounded-full'>
-              <X />
+            <div onClick={closeBooking} className='absolute top-3 right-3 bg-primary-foreground text-primary hover:bg-primary hover:text-primary-foreground duration-450 transition-all p-1 sm:p-2 rounded-full'>
+              <X className='size-3 ' />
             </div>
            
           </div>
@@ -143,8 +143,8 @@ const {closeBooking} = useBooking()
             </div>
           </form>
           <div className='flex flex-col justify-center items-center gap-3'>
-            <Button className={'text-xl py-5 px-5'} variant='secondary' >Send Booking</Button>
-            <p className='text-center'>We&apos;ll be in touch to discuss your requirements.</p>
+            <Button className={'sm:text-xl py-5 px-5'} variant='secondary' >Send Booking</Button>
+            <p className='text-sm text-center'>We&apos;ll be in touch to discuss your requirements.</p>
           </div>
         </div>
 
