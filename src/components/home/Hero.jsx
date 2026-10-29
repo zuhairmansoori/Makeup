@@ -35,7 +35,7 @@ function Hero() {
       scrollTrigger:{
         trigger:ref.current,
         start:"top top",
-        end:"+=1000",
+        end:"+=700",
         scrub:2,
         pin:true
       }
