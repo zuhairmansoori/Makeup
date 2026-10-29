@@ -37,7 +37,8 @@ function Hero() {
         start:"top top",
         end:"+=700",
         scrub:2,
-        pin:true
+        pin:true,
+        pinSpacing: false,
       }
     })
     tl.to(".heading2-wrap",{
@@ -50,14 +51,15 @@ function Hero() {
     },"<").to('.ctc-wrap',{
       y:500
     },"<")
+ 
   
 
   },{scope:ref})
   const {openBooking} = useBooking()
   return (
     <>
-      <section ref={ref} className=" overflow-hidden relative min-h-screen bg-[url('/Hero-bg2.webp')] lg::bg-[url('/Hero-bg.webp')] bg-center bg-cover  bg-no-repeat" >
-
+      <section ref={ref}  >
+      <div className=" overflow-hidden hero  relative min-h-screen bg-[url('/Hero-bg2.webp')] lg::bg-[url('/Hero-bg.webp')] bg-center bg-cover  bg-no-repeat">
         <Image
           alt='model iamge'
           fill
@@ -75,8 +77,8 @@ function Hero() {
           priority
         />
 
-        <div className='absolute w-full h-full flex  justify-center items-center z-10'>
-          <h1 className='w-full font-heading h1 text-7xl sm:text-9xl md:text-[160px] md:mt-15 lg:mt-0 lg:text-[220px] text-white text-center font-bold'>
+        <div className='absolute w-full h-full  flex justify-center items-center z-10'>
+          <h1 className='w-full font-heading  h1 text-7xl sm:text-9xl md:text-[160px] md:mt-15 lg:mt-0 lg:text-[220px] text-white text-center font-bold'>
             MAKEUP
           </h1>
         </div>
@@ -101,6 +103,10 @@ function Hero() {
          </div>
          
         </div>
+
+      </div>
+
+        
       </section>
     </>
   )

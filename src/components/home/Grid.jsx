@@ -1,5 +1,8 @@
-
-import React from 'react'
+'use client'
+import React,{useRef} from 'react'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from 'gsap/all'
 import Hero from './Hero'
 import Services from './Services'
 import Gallery from './Gallery'
@@ -11,14 +14,14 @@ import BookingForm from '../booking/BookingForm'
 
 
 function Grid() {
-  
+
   return (
     <>
-      <section className='relative'>
-        <div className=' '>
+      <section  className='relative'>
+        <div className='relative'>
           <Hero />
         </div>
-        <div  className="relative -mt-100 ">
+        <div  className="relative  ">
           <Services />
           <Gallery/>
           <About/>

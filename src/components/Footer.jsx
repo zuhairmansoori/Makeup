@@ -24,7 +24,7 @@ function Footer() {
  const {openBooking} = useBooking()
   return (
    <>
-   <footer id='contact' className='bg-primary-foreground h-1/3 p-5 sm:p-10 lg:p-20'>
+   <footer id='contact' className=' bg-primary-foreground h-1/3 p-5 sm:p-10 lg:p-20'>
    <div className='grid grid-cols-1 gap-5 lg:gap-0 sm:grid-cols-2 lg:grid-cols-5 justify-start items-start justify-items-start sm:justify-end lg:justify-center lg:items-start lg:justify-items-center'>
           <div className='lg:w-100 flex flex-col justify-center items-start '>
         <Image
