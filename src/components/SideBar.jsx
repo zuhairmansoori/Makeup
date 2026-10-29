@@ -2,6 +2,7 @@
 import React from 'react'
 import { ChevronDown, ChevronRight, Menu } from 'lucide-react'
 import Link from 'next/link'
+import { FaFacebook, FaInstagram } from 'react-icons/fa6'
 
 function SideBar({ nav, isMenu, setIsMenu, open, setOpen }) {
     return (
@@ -35,6 +36,10 @@ function SideBar({ nav, isMenu, setIsMenu, open, setOpen }) {
                             <Link href={nav.href}>{nav.name}</Link>
                         </p>
                     ))}
+                    <div className='flex items-center gap-5'>
+                         <FaFacebook size={25}/>
+                            <FaInstagram size={25} /> 
+                    </div>
                 </div>
             </div>
 
