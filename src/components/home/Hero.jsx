@@ -59,7 +59,7 @@ function Hero() {
   return (
     <>
       <section ref={ref}  >
-      <div className=" overflow-hidden hero  relative min-h-screen bg-[url('/Hero-bg2.webp')] lg::bg-[url('/Hero-bg.webp')] bg-center bg-cover  bg-no-repeat">
+      <div className=" overflow-hidden hero  relative min-h-screen bg-[url('/Hero-bg2.webp')] lg:bg-[url('/Hero-bg.webp')] bg-center bg-cover  bg-no-repeat">
         <Image
           alt='model iamge'
           fill
@@ -90,7 +90,7 @@ function Hero() {
           </div>
           
         </div>
-        <div className='absolute flex flex-col-reverse sm:flex-row  sm:left-6 md:items-center md:justify-center bottom-30   lg:flex-row items-center lg:justify-around  md:gap-20  lg::gap-80  w-full lg:pl-0 lg:bottom-30 text-secondary-foreground md:text-3xl font-bold z-20'>
+        <div className='absolute flex flex-col-reverse sm:flex-row  sm:left-6 md:items-center md:justify-center bottom-30   lg:flex-row items-center lg:justify-around  md:gap-20  lg:gap-80  w-full lg:pl-0 lg:bottom-30 text-secondary-foreground md:text-3xl font-bold z-20'>
           <div className='ctc-wrap'>
                <Button onClick={openBooking} className={'text-xl ctc md:text-2xl px-8 py-6'}>
             Book Your Look
